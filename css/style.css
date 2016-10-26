@@ -32,20 +32,53 @@ a:hover {
 
 p {
   margin-bottom: 1.5em;
-  font-size: 20px;
+  font-size: 16px;
   color: #848484;
   font-weight: 300;
   font-family: "Open Sans", Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 { 
+ color: white;
+  font-family:  'Comfortaa', cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 115px;
+
+}
+@media screen and (max-width: 400px) {
+  h1 {
+  color: white;
+  font-family:  'Comfortaa', cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 70px;
+
+  }
+}
+
+h2, h3, h4, h5, h6 {
   color: #5a5a5a;
  font-family:  'Comfortaa', cursive;
   font-weight: 400;
   margin: 0 0 30px 0;
   letter-spacing: 2px;
-}
+  font-size: 20px;
 
+}
+h4 {  
+  color: #848484;
+ font-family:  'Comfortaa', cursive;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  letter-spacing: 2px;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  padding-top: 60px;
+}
 
 
 figure {
@@ -100,17 +133,15 @@ figure {
   *display: inline;
 }
 #fh5co-header .top a:hover {
-  color: white !important;
+  
   text-decoration: underline;
 }
 
 .fh5co-cover,
 .fh5co-hero {
-  font-family: 'Comfortaa', cursive;
-
   position: relative;
   height: 800px;
-  font-weight: 300;
+  
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover,
@@ -137,13 +168,13 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
 .fh5co-cover .btn {
   padding: 1em 5em;
-  opacity: .9;
+  opacity: 0.9;
 }
 .fh5co-cover.fh5co-cover_2 {
   height: 700px;
@@ -164,15 +195,17 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover .desc {
-    padding-left: 15px;
-    padding-right: 15px;
+  width: 100%; 
+  float: none;
+  text-align: center;
   }
 }
+
 .fh5co-cover .desc h2 {
   color: #fff;
   text-transform: uppercase;
   font-size: 80px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
@@ -181,14 +214,16 @@ figure {
   }
 }
 .fh5co-cover .desc span {
+  font-family: 'Comfortaa', cursive;
+  
   display: block;
   margin-bottom: 30px;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 18px;
   letter-spacing: 2px;
 }
 .fh5co-cover .desc span a {
-  color: #fff;
+  color:solid rgba(255, 255, 255, 0.5);
 }
 .fh5co-cover .desc span a:hover, .fh5co-cover .desc span a:focus {
   color: #fff !important;
@@ -346,7 +381,7 @@ figure {
 }
 
 .nav-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   position: relative;
   float: left;
   width: 100%;
@@ -489,14 +524,14 @@ figure {
 
 #fh5co-work-section,
 #fh5co-services-section,
-#fh5co-content-section,
+
 #fh5co-work-section_2 {
   padding: 7em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-work-section,
   #fh5co-services-section,
-  #fh5co-content-section,
+ 
   #fh5co-work-section_2 {
     padding: 4em 0;
   }
@@ -763,10 +798,10 @@ h3.heading-section:before {
   }
 }
 .fh5co-testimonial h2 {
-  font-size: 16px;
+  
   letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
+  
+  
   margin-bottom: 50px;
 }
 .fh5co-testimonial figure {
@@ -784,20 +819,26 @@ h3.heading-section:before {
 }
 .fh5co-testimonial blockquote {
   border: none;
-  margin-bottom: 20px;
+      padding: 10px 20px;
+    font-size: 14px;
+  
 }
 .fh5co-testimonial blockquote p {
-  font-size: 26px;
-  line-height: 1.6em;
-  color: #555555;
+    
+    font-size: 16px;
+    line-height: 2;
+    color: #848484;
+    font-weight: 300;
+    font-family: "Open Sans", Arial, sans-serif;
+
 }
 
 
 .fh5co-about-us h2 {
-  font-size: 16px;
+  
   letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
+  
+  
   margin-bottom: 50px;
 }
 .fh5co-about-us img {
@@ -806,7 +847,8 @@ h3.heading-section:before {
   width: 100%;
 }
 .fh5co-about-us a {
-  font-size: 18px;
+  font-size: 16px;
+  color: #ffccbc !important;
 }
 
 #fh5co-blog-section, #fh5co-start-project-section {
@@ -894,22 +936,24 @@ h3.heading-section:before {
 }
 
 #footer {
-  background: #222831;
+  background: white;
   padding: 60px 0 40px;
 }
 #footer p {
-  color: rgba(255, 255, 255, 0.3);
-  letter-spacing: 1px;
-  font-size: 14px;
-  text-transform: uppercase;
+  color: #848484;
+
 }
 #footer p a {
-  color: rgba(255, 255, 255, 0.5);
+  color: #848484;
 }
 #footer .footer-menu {
-  float: right;
+ 
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
 }
 
 
@@ -922,7 +966,7 @@ h3.heading-section:before {
 #footer .footer-menu li {
   display: inline-block;
   margin-left: 30px;
-  text-transform: uppercase;
+  
 }
 @media screen and (max-width: 768px) {
   #footer .footer-menu li {
@@ -930,7 +974,7 @@ h3.heading-section:before {
   }
 }
 #footer .footer-menu li a {
-  color: rgba(255, 255, 255, 0.5);
+  color: #848484;
 }
 #footer .footer-menu li:first-child {
   margin-left: 0;
@@ -947,21 +991,25 @@ h3.heading-section:before {
 .btn.btn-primary {
   background: transparent;
   color: #fff;
-  
-  border: 2px solid white !important;
+  border: 2px solid white;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #84b2a9;
-  color: #fff !important;
+  
+  
+  border: 2px solid #ffccbc;
 }
 .btn:hover, .btn:active, .btn:focus {
-  background: #ffccbc !important;
-  color: #fff;
+  background: none !important;
+  
   outline: none !important;
+  border: 2px solid #ffccbc;
 }
-.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
-  border-color: transparent;
+
+#btn2 {
+  border: 2px solid #ffccbc;
+  color: #ffccbc;
+
 }
 
 .js .animate-box {
@@ -1202,7 +1250,29 @@ h3.heading-section:before {
 }
 
 .lead {
+  text-align: center;
   line-height: 1.8;
+}
+.fist-icon:before {
+  
+   content: '';  
+  display: inline-block;
+  background: url(../images/like.png) top center no-repeat;
+  height: 64px; 
+   width: 64px;
+   opacity: 0.7;
+}
+.second-icon:before {
+  
+  content: '';  
+  display: inline-block;
+  background: url(../images/email.png) top center no-repeat;
+  height: 64px; 
+  width: 64px;
+  text-align: center;
+  opacity: 0.7;
+      margin-bottom: 80px;
+    margin-top: 20px;
 }
 
 .no-js #loader {
@@ -1232,7 +1302,7 @@ h3.heading-section:before {
   background: url(../images/scissors.png) top left no-repeat;
   height: 64px; 
   width: 64px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .icon-2:before {
   content: '';  
@@ -1240,7 +1310,7 @@ h3.heading-section:before {
   background: url(../images/hair-dye-kit.png) top left no-repeat;
   height: 64px; 
    width: 64px;
-   opacity: 0.5;
+   opacity: 0.7;
 }
 
 .icon-3:before {
@@ -1249,7 +1319,7 @@ h3.heading-section:before {
   background: url(../images/hair-dryer.png) top left no-repeat;
   height: 64px; 
    width: 64px;
-   opacity: 0.5;
+   opacity: 0.7;
 }
 .icon-4:before {
   content: '';  
@@ -1257,7 +1327,7 @@ h3.heading-section:before {
   background: url(../images/finger-with-nail.png) top left no-repeat;
   height: 64px; 
    width: 64px;
-   opacity: 0.5;
+   opacity: 0.7;
 }
 .icon-5:before {
   content: '';  
@@ -1265,7 +1335,7 @@ h3.heading-section:before {
   background: url(../images/manicure.png) top left no-repeat;
   height: 64px; 
    width: 64px;
-   opacity: 0.5;
+   opacity: 0.7;
 }
 .icon-6:before {
   content: '';  
@@ -1273,16 +1343,118 @@ h3.heading-section:before {
   background: url(../images/eye-make-up.png) top left no-repeat;
   height: 64px; 
    width: 64px;
-   opacity: 0.5;
+   opacity: 0.7;
+
 }
 #puk {
   background-image: url(../images/work-1.jpg);
   width: 100%;
   background-size: cover;
-
 display: block;
   
 
 }
+.contacts {
+  float: left;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
 
+}
+
+.fh5co-lead {
+  padding-top: 50px;
+  
+}
+#fh5co-main {
+  padding-top: 60px;
+}
+.fh5co-social-icons {
+  margin: 0;
+  padding: 0;
+}
+.fh5co-social-icons li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.fh5co-social-icons li a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  color: #f8b29c;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.fh5co-social-icons li a i {
+  font-size: 40px;
+}
+
+.form-group {
+  width: 100% ;
+  margin-bottom: 30px;
+}
+
+.fh5co-section {
+  padding-top: 70px;
+}
+
+.fh5co-contact-info ul {
+  padding: 0;
+  margin: 0;
+}
+.fh5co-contact-info ul li {
+  padding: 0 0 0 50px;
+  margin: 0 0 30px 0;
+  list-style: none;
+  position: relative;
+}
+.fh5co-contact-info ul li:before {
+  color: #f8b29c;
+  position: absolute;
+  left: 0;
+  top: .05em;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fh5co-contact-info ul li.address:before {
+  font-size: 23px;
+  content: "\eabd";
+}
+.fh5co-contact-info ul li.phone:before {
+  font-size: 23px;
+  content: "\e9f4";
+}
+.fh5co-contact-info ul li.email:before {
+  font-size: 23px;
+  content: "\e9da";
+}
+.form-control {
+  padding:10px 10px;
+}
+label {
+  font-weight: 300;
+}
+
+#fh5co-content-section {
+  padding-top:100px;
+  padding-bottom: 0px;
+
+}
 /*# sourceMappingURL=style.css.map */
